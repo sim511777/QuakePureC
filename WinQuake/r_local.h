@@ -59,6 +59,7 @@ extern cvar_t	r_graphheight;
 extern cvar_t	r_clearcolor;
 extern cvar_t	r_waterwarp;
 extern cvar_t	r_fullbright;
+extern cvar_t	r_lightmap;
 extern cvar_t	r_drawentities;
 extern cvar_t	r_aliasstats;
 extern cvar_t	r_dspeeds;

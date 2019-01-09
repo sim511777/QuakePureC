@@ -614,7 +614,7 @@ void D_PolysetDrawSpans8 (spanpackage_t *pspanpackage)
 			{
 				if ((lzi >> 16) >= *lpz)
 				{
-					*lpdest = ((byte *)acolormap)[*lptex + (llight & 0xFF00)];
+					*lpdest = ((byte *)acolormap)[(r_lightmap.value ? 15 : *lptex) + (llight & 0xFF00)];
 // gel mapping					*lpdest = gelmap[*lpdest];
 					*lpz = lzi >> 16;
 				}
