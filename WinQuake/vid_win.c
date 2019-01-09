@@ -640,8 +640,7 @@ qboolean VID_SetWindowedMode(int modenum)
    vid.height = vid.conheight = DIBHeight;
    vid.width = vid.conwidth = DIBWidth;
 
-   vid.aspect = ((float)vid.height / (float)vid.width) *
-      (320.0 / 240.0);
+   vid.aspect = 1;
 
    SendMessage(mainwindow, WM_SETICON, (WPARAM)TRUE, (LPARAM)hIcon);
    SendMessage(mainwindow, WM_SETICON, (WPARAM)FALSE, (LPARAM)hIcon);
@@ -704,8 +703,7 @@ qboolean VID_SetFullDIBMode(int modenum)
    vid.maxwarpheight = WARP_HEIGHT;
    vid.height = vid.conheight = DIBHeight;
    vid.width = vid.conwidth = DIBWidth;
-   vid.aspect = ((float)vid.height / (float)vid.width) *
-      (320.0 / 240.0);
+   vid.aspect = 1;
 
    // needed because we're not getting WM_MOVE messages fullscreen on NT
    window_x = 0;
