@@ -1680,7 +1680,7 @@ typedef struct
    int		width;
 } modedesc_t;
 
-#define MAX_COLUMN_SIZE		5
+#define MAX_COLUMN_SIZE		20
 #define MODE_AREA_HEIGHT	(MAX_COLUMN_SIZE + 6)
 #define MAX_MODEDESCS		(MAX_COLUMN_SIZE*3)
 
