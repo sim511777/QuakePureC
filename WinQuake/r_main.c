@@ -586,7 +586,7 @@ void R_DrawViewModel (void)
 	float		add;
 	dlight_t	*dl;
 	
-	if (!r_drawviewmodel.value || r_fov_greater_than_90)
+	if (!r_drawviewmodel.value)
 		return;
 
 	if (cl.items & IT_INVISIBILITY)
